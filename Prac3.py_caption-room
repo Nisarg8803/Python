@@ -1,0 +1,12 @@
+N = int(input())
+
+key = map(int, input().split())
+key = sorted(key)
+
+for i in range (len(key)):
+    if(i != len(key)-1):
+        if(key[i]!=key[i-1] and key[i]!=key[i+1]):
+            print(key[i])
+            break;  
+        else:
+            print(key[i])
